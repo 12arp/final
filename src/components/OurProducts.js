@@ -13,7 +13,7 @@ const OurProducts = ({ currentLanguage }) => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/products');
+                const response = await axios.get('https://adityaback.onrender.com/api/products');
                 if (response.data.success) {
                     // Take only the first three products
                     setProducts(response.data.data.slice(0, 3));

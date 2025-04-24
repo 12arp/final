@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './ProductItem.css';
 
-const BACKEND_URL = 'http://localhost:5000';
+const BACKEND_URL = 'https://adityaback.onrender.com';
 
 const ProductItem = ({ product }) => {
     const { _id, image, title, description } = product;

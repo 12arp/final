@@ -25,7 +25,7 @@ export default function SignIn() {
       setLoading(true);
       setError(null);
       
-      const res = await axios.post('http://localhost:5000/api/auth/signin', formData);
+      const res = await axios.post('https://adityaback.onrender.com/api/auth/signin', formData);
       
       if (res.data.success) {
         localStorage.setItem('user', JSON.stringify(res.data.data));

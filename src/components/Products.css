@@ -1,6 +1,71 @@
 .products {
-    padding: 100px 0 50px;
+    padding: 100px 0 80px;
     background-color: #e8f5e9;
+    position: relative;
+    min-height: 100vh;
+}
+
+.products-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.company-name {
+    margin: 0;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+.logo {
+    height: 50px;
+}
+
+.logo img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.menu-toggle:hover {
+    transform: scale(1.1);
 }
 
 .product-grid {
@@ -69,32 +134,261 @@
     background-color: #283593;
 }
 
+.contact-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.whatsapp-button,
+.call-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-button {
+    background-color: #25D366;
+    color: white;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+    transform: translateY(-1px);
+}
+
+.call-button {
+    background-color: #2196F3;
+    color: white;
+}
+
+.call-button:hover {
+    background-color: #1976D2;
+    transform: translateY(-1px);
+}
+
+.whatsapp-button svg,
+.call-button svg {
+    width: 20px;
+    height: 20px;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 0.5rem;
+    z-index: 999;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    gap: 0.25rem;
+    padding: 0.5rem;
+}
+
+.nav-link svg {
+    font-size: 1.2rem;
+}
+
+.nav-link:hover {
+    color: #007bff;
+    transform: translateY(-2px);
+}
+
+.nav-link.active {
+    color: #007bff;
+    font-weight: 600;
+}
+
 @media (max-width: 768px) {
     .products {
-        padding: 80px 0 30px;
+        padding: 80px 0 70px;
     }
 
-    .product-grid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 20px;
+    .container {
+        padding: 0 15px;
+        margin-top: 60px;
     }
 
-    .product-img {
-        height: 180px;
+    .header-content {
+        padding: 0.8rem 1rem;
     }
 
-    .explore-more-btn {
-        padding: 10px 20px;
-        font-size: 1rem;
+    .company-name {
+        font-size: 1.2rem;
+    }
+
+    .header-right {
+        gap: 0.5rem;
+        margin-left: auto;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .contact-buttons {
+        gap: 0.3rem;
+    }
+
+    .whatsapp-button,
+    .call-button {
+        padding: 0.3rem 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .whatsapp-button svg,
+    .call-button svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .bottom-nav {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(5px);
+        border-radius: 50px;
+        padding: 6px 15px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+        z-index: 999;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        min-width: 85%;
+        max-width: 90%;
+        height: auto;
+        transition: bottom 0.3s ease;
+    }
+
+    .bottom-nav.active {
+        bottom: 20px;
+    }
+
+    .nav-list {
+        flex-direction: row;
+        gap: 8px;
+        padding: 0;
+        margin: 0;
+        justify-content: space-between;
+    }
+
+    .nav-item {
+        width: auto;
+        margin: 0;
+    }
+
+    .nav-link {
+        padding: 4px 8px;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+        width: auto;
+    }
+
+    .nav-link svg {
+        font-size: 0.9rem;
+    }
+
+    .nav-link span {
+        font-size: 0.7rem;
     }
 }
 
 @media (max-width: 480px) {
-    .product-grid {
-        grid-template-columns: 1fr;
+    .products {
+        padding: 60px 0 60px;
     }
 
-    .product-img {
-        height: 200px;
+    .container {
+        padding: 0 10px;
+        margin-top: 50px;
+    }
+
+    .header-content {
+        padding: 0.6rem 0.8rem;
+    }
+
+    .company-name {
+        font-size: 1rem;
+    }
+
+    .header-right {
+        gap: 0.3rem;
+    }
+
+    .contact-buttons {
+        gap: 0.2rem;
+    }
+
+    .whatsapp-button,
+    .call-button {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.7rem;
+    }
+
+    .whatsapp-button svg,
+    .call-button svg {
+        width: 12px;
+        height: 12px;
+    }
+
+    .bottom-nav {
+        min-width: 90%;
+        max-width: 95%;
+        padding: 4px 10px;
+    }
+
+    .bottom-nav.active {
+        bottom: 15px;
+    }
+
+    .nav-list {
+        gap: 6px;
+    }
+
+    .nav-link {
+        padding: 3px 6px;
+    }
+
+    .nav-link svg {
+        font-size: 0.8rem;
+    }
+
+    .nav-link span {
+        font-size: 0.65rem;
     }
 } 

@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './AdminPanel.css';
 
-const BACKEND_URL = 'http://localhost:5000';
+const BACKEND_URL = 'https://adityaback.onrender.com';
 
 const AdminPanel = () => {
     const navigate = useNavigate();
