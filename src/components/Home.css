@@ -1,0 +1,296 @@
+.home-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0;
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 200px 2% 0 10%;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 3.2rem;
+    font-weight: bold;
+    line-height: 1.3;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    white-space: nowrap;
+}
+
+.subtitle {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0;
+    display: block;
+    text-align: left;
+}
+
+.explore-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.explore-button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.service-highlights {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 200px 10% 0 2%;
+    max-width: 400px;
+}
+
+.highlight-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.highlight-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.highlight-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #FFA500;
+    background: rgba(255, 165, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.highlight-card:hover .highlight-icon {
+    transform: scale(1.1);
+}
+
+.highlight-text {
+    flex: 1;
+}
+
+.highlight-title {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.highlight-subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
+
+/* Tablet Responsive Design */
+@media (max-width: 1024px) {
+    .hero-content, .service-highlights {
+        padding-top: 150px;
+    }
+
+    .service-highlights {
+        padding: 150px 5% 0;
+        max-width: 450px;
+    }
+
+    .highlight-card {
+        padding: 20px;
+    }
+}
+
+/* Medium-sized tablets and landscape phones */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-content {
+        padding: 20px 5% 0;
+        align-items: center;
+        text-align: center;
+        margin-top: 0;
+        max-width: 700px;
+    }
+
+    .service-highlights {
+        order: -1;
+        padding: 80px 5% 0;
+        flex-direction: row;
+        max-width: none;
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .highlight-card {
+        flex: 0 1 auto;
+        padding: 12px;
+        min-width: 0;
+        width: calc(33.33% - 10px);
+        max-width: 180px;
+    }
+
+    .highlight-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+    }
+
+    .highlight-title {
+        font-size: 0.9rem;
+        margin-bottom: 2px;
+    }
+
+    .highlight-subtitle {
+        font-size: 0.75rem;
+    }
+
+    .hero h1 {
+        white-space: normal;
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .service-highlights {
+        padding: 65px 3% 0;
+        gap: 6px;
+    }
+
+    .hero-content {
+        padding: 10px 5% 0;
+    }
+
+    .highlight-card {
+        padding: 8px;
+        gap: 8px;
+    }
+
+    .highlight-icon {
+        width: 28px;
+        height: 28px;
+        font-size: 14px;
+    }
+
+    .highlight-title {
+        font-size: 0.8rem;
+        margin-bottom: 0;
+    }
+
+    .highlight-subtitle {
+        font-size: 0.65rem;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Very Small Mobile Devices */
+@media (max-width: 360px) {
+    .service-highlights {
+        padding: 60px 2% 0;
+        gap: 4px;
+    }
+
+    .hero-content {
+        padding: 5px 5% 0;
+    }
+
+    .highlight-card {
+        padding: 6px;
+        gap: 6px;
+    }
+
+    .highlight-icon {
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+    }
+
+    .highlight-title {
+        font-size: 0.7rem;
+    }
+
+    .highlight-subtitle {
+        font-size: 0.6rem;
+    }
+}

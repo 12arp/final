@@ -1,0 +1,90 @@
+{
+    "header": {
+        "home": "Home",
+        "products": "Products",
+        "aboutUs": "About Us",
+        "contact": "Contact"
+    },
+    "home": {
+        "title": "Advanced Farm Equipment for Modern Agriculture",
+        "subtitle": "Quality farming equipment designed for Indian farmers",
+        "exploreButton": "Explore Products"
+    },
+    "about": {
+        "title": "About Sahu Metals",
+        "journey": {
+            "title": "Our Journey",
+            "description": "Founded in 2004, Sahu Metals has grown from a small workshop to a leading manufacturer of agricultural equipment in India. Our journey has been driven by a deep commitment to supporting Indian farmers with reliable and efficient farming solutions."
+        },
+        "mission": {
+            "title": "Our Mission",
+            "description": "To empower Indian farmers with high-quality, affordable agricultural equipment that enhances productivity and reduces manual labor. We believe in sustainable farming practices and continuously innovate to meet the evolving needs of modern agriculture."
+        },
+        "values": {
+            "title": "Our Values",
+            "items": {
+                "quality": "Quality First",
+                "satisfaction": "Customer Satisfaction",
+                "innovation": "Innovation",
+                "sustainability": "Sustainability",
+                "responsibility": "Social Responsibility"
+            }
+        },
+        "stats": {
+            "experience": "Years of Experience",
+            "customers": "Happy Customers",
+            "products": "Product Categories",
+            "centers": "Service Centers"
+        }
+    },
+    "contact": {
+        "title": "Contact Us",
+        "subtitle": "Get in touch with us for any inquiries or support",
+        "info": {
+            "location": {
+                "title": "Our Location",
+                "address": "G-510(1st), IPIA, Road No. 7,\nAnatpura, Kota, Rajasthan"
+            },
+            "email": {
+                "title": "Email Us",
+                "address": "sahumetalskota@gmail.com"
+            },
+            "phone": {
+                "title": "Call Us",
+                "numbers": [
+                    "+91 99283 98987",
+                    "+91 98299 61487",
+                    "+91 63781 40573"
+                ]
+            }
+        },
+        "form": {
+            "title": "Send us a Message",
+            "name": {
+                "placeholder": "Your Name"
+            },
+            "email": {
+                "placeholder": "Your Email"
+            },
+            "phone": {
+                "placeholder": "Your Phone"
+            },
+            "message": {
+                "placeholder": "Your Message"
+            },
+            "submit": "Send Message"
+        }
+    },
+    "products": {
+        "title": "Our Products",
+        "exploreMore": "Explore More Products",
+        "featured": {
+            "title": "Featured Products",
+            "subtitle": "Discover our most popular agricultural equipment"
+        }
+    },
+    "language": {
+        "english": "English",
+        "hindi": "हिंदी"
+    }
+} 
