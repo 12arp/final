@@ -34,7 +34,7 @@ const Home = () => {
                     <div className="header-right">
                         <div className="contact-buttons">
                             <a 
-                                href="https://wa.me/919876543211?text=I%20want%20to%20connect%20to%20you%20for%20enquery" 
+                                href="https://wa.me/9876542211?text=I%20want%20to%20connect%20to%20you%20for%20enquery" 
                                 target="_blank" 
                                 rel="noopener noreferrer"
                                 className="whatsapp-button"
@@ -45,7 +45,7 @@ const Home = () => {
                                 WhatsApp
                             </a>
                             <a 
-                                href="tel:9876543211" 
+                                href="tel:9876542211" 
                                 className="call-button"
                             >
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
